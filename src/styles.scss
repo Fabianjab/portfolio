@@ -1,1 +1,52 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    src: url(/assets/fonts/Poppins-Regular.ttf);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    max-width: 100%;
+    margin: 0;
+    color: white;
+}
+
+button {
+    background-color: #70E61C;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    width: auto;
+    height: 58px;
+    border: none;
+    font-size: 23px;
+    font-weight: 400;
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+    &:hover {
+        background-color: #9747FF;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 30px;
+        padding-left: 30px;
+        transform: scale(1.2);
+        transition-property: transform;
+        transition-duration: 500ms;
+        transition-timing-function: ease;
+    }
+}
+
+h2 {
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 108px;
+}
+
+span {
+    font-size: 16px;
+    font-weight: 400;
+}

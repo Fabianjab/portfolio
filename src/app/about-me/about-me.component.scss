@@ -1,0 +1,57 @@
+.about-me-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(27, 37, 57);
+    padding-left: 120px;
+}
+
+.about-me-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.icons-about-me {
+    height: 50px;
+    width: 50px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 35px;
+}
+
+.infos-about-me {
+    display: flex;
+    justify-content: center;
+}
+
+#avatar {
+    height: 453px;
+    width: 453px;
+    border-radius: 50%;
+    border: solid green 4px;
+    margin-left: 180px;
+}
+
+.avatar-section {
+    display: flex;
+    align-items: center;
+
+}
+
+#green-decliner {
+    width: 267px;
+    height: 4px;
+    background-color: green;
+    z-index: 2;
+}
+
+.about-me-introduction {
+    margin-bottom: 35px;
+}
+
+#background-shadow {
+    position: absolute;
+    right: 0;
+    top: 600px;
+    z-index: 1;
+}

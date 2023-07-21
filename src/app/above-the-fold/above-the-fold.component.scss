@@ -1,0 +1,124 @@
+#above-the-fold {
+    background-color: #141D2F;
+    display: flex;
+    flex-direction: column;
+    background-image: url(/assets/img/background-layer.png);
+    background-size: cover;
+    background-position-y: 300px;
+}
+
+#above-the-fold-container {
+    display: flex;
+    justify-content: center;
+}
+
+.presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#iam-presentation {
+    transform: rotate(270deg);
+    font-size: 64px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.order-presentation {
+    display: flex;
+    flex-direction: column;
+}
+
+#name-presentation {
+    font-size: 73px;
+    font-weight: 700;
+    margin-bottom: -5px;
+}
+
+#designation-presentation {
+    font-size: 59px;
+    font-weight: 400;
+    color: #9747FF;
+    margin-top: -5px;
+}
+
+#presentation-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#picture-fabian {
+    height: 705px;
+    width: 646px;
+}
+
+#button-presentation {
+    margin-top: 30px;
+}
+
+#infos-short {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-bottom: 100px;
+}
+
+#scroll-down {
+    transform: rotate(90deg);
+    font-size: 23px;
+    width: 400;
+}
+
+#icon-github {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    padding-right: 40px;
+
+    &:hover {
+        transform: scale(1.33);
+    }
+}
+
+#icon-linkedin {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    padding-right: 40px;
+
+    &:hover {
+        transform: scale(1.33);
+    }
+}
+
+#icon-mail {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    padding-right: 40px;
+
+    &:hover {
+        transform: scale(1.33);
+    }
+}
+
+#infos-short-mail {
+    font-size: 23px;
+    width: 400;
+}
+
+#background-decliner {
+    position: absolute;
+    left: 0;
+    width: 100px;
+}
+
+#info-line {
+    display: flex;
+    align-items: center;
+}

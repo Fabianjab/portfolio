@@ -1,0 +1,29 @@
+.portfolio-container {
+    background-color: rgb(27, 37, 57);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#right-decliner-portfolio {
+    background-color: #9747FF;
+    width: 484px;
+    height: 4px;
+    position: absolute;
+    right: 0px;
+}
+
+#left-decliner-portfolio {
+    background-color: #9747FF;
+    width: 109px;
+    height: 4px;
+    position: absolute;
+    left: 500px;
+}
+
+#headline-portfolio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -1,0 +1,55 @@
+.my-skills-container {
+    background-color: rgb(27, 37, 57);
+    padding-left: 120px;
+    padding-right: 120px;
+    display: flex;
+    padding-top: 250px;
+}
+
+.programm-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 66%;
+
+}
+
+.icons-skills {
+    width: 88px;
+    height: 100px;
+    padding-right: 170px;
+    padding-bottom: 100px;
+    z-index: 2;
+}
+
+.my-skills-section {
+    display: flex;
+    flex-direction: column;
+    width: 34%;
+    align-items: center;
+
+}
+
+#purple-decliner {
+    position: absolute;
+    right: 0;
+    width: 58px;
+    height: 4px;
+    background-color: #9747FF;
+
+}
+
+#my-skills-text {
+    text-align: right;
+    padding-bottom: 50px;
+}
+
+#button-my-skills {
+    width: auto;
+}
+
+#my-skills-shadow {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    top: 1950px
+}

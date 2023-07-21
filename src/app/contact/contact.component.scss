@@ -1,0 +1,71 @@
+.contact {
+    padding-left: 120px;
+    padding-right: 120px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    background-image: url(/assets/img/arrow-top.svg);
+    background-size: 39px;
+    background-repeat: no-repeat;
+    background-position: right;
+
+
+    &:hover {
+        background-image: url(/assets/img/arrow-top-green.svg);
+    }
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#contact-section {
+    z-index: 2;
+    width: 50%;
+
+}
+
+#purple-background-contact {
+    position: absolute;
+    left: 0;
+    top: 5500px;
+    z-index: 1;
+}
+
+#form-and-description {
+    display: flex;
+    justify-content: center;
+}
+
+
+#growable-input {
+    display: block;
+    overflow: hidden;
+    resize: both;
+    min-height: 40px;
+    line-height: 20px;
+    width: 619px;
+    height: 202px;
+    background-color: #9747ff00;
+    color: white;
+    margin-bottom: 35px;
+    border: solid 2px #9747FF;
+    border-radius: 10px;
+
+}
+
+#growable-input::placeholder {
+    color: white;
+}
+
+#form-with-button {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#button-form {
+    width: 220px;
+}

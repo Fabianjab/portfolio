@@ -1,8 +1,9 @@
 .about-me-container {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(27, 37, 57);
     padding-left: 120px;
+    margin-top: 100px;
+    margin-bottom: 250px;
 }
 
 .about-me-section {
@@ -35,6 +36,8 @@
 .avatar-section {
     display: flex;
     align-items: center;
+    z-index: 11;
+
 
 }
 
@@ -54,4 +57,32 @@
     right: 0;
     top: 600px;
     z-index: 1;
+}
+
+@media (max-width: 340px) {
+    #avatar {
+        display: none;
+    }
+}
+
+@media (max-width: 1350px) {
+    #green-decliner {
+        display: none;
+    }
+
+}
+
+@media (max-width: 900px) {
+    #avatar {
+        display: none;
+    }
+
+    .about-me-container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .infos-about-me {
+        margin-bottom: 35px;
+    }
 }

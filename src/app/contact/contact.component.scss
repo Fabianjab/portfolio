@@ -1,18 +1,16 @@
 .contact {
-    padding-left: 120px;
     padding-right: 120px;
     display: flex;
     justify-content: start;
     flex-direction: column;
-    background-image: url(/assets/img/arrow-top.svg);
-    background-size: 39px;
+    background-image: url(/assets/img/purple-background-contact.svg);
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: left bottom;
+    padding-bottom: 150px;
+}
 
-
-    &:hover {
-        background-image: url(/assets/img/arrow-top-green.svg);
-    }
+#contact-headline {
+    padding-left: 70px;
 }
 
 #contact-form {
@@ -30,13 +28,14 @@
 #purple-background-contact {
     position: absolute;
     left: 0;
-    top: 5500px;
     z-index: 1;
 }
 
 #form-and-description {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    padding-left: 120px;
+
 }
 
 
@@ -53,6 +52,12 @@
     margin-bottom: 35px;
     border: solid 2px #9747FF;
     border-radius: 10px;
+    text-indent: 20px;
+    line-height: 50px;
+
+    &:hover {
+        border: solid 2px #70E61C;
+    }
 
 }
 
@@ -68,4 +73,107 @@
 
 #button-form {
     width: 220px;
+}
+
+#contact-description {
+    width: 473px;
+}
+
+#small-headline-contact {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+}
+
+#arrow-top {
+    height: 39px;
+
+    &:hover {
+        filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+    }
+}
+
+#position-arrow {
+    display: flex;
+    justify-content: end;
+    margin-top: 100px;
+}
+
+#contact-decliner {
+    height: 4px;
+    width: 50px;
+    background-color: #9747FF;
+}
+
+#contact-headline-optic {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@media (max-width: 1400px) {
+    #form-and-description {
+        flex-direction: column;
+    }
+
+    #contact-section {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    #growable-input {
+        width: 100%;
+    }
+
+    #contact-form {
+        width: 100%;
+    }
+
+    #contact-section {
+        width: 100%;
+    }
+
+    #contact-description {
+        width: 100%;
+    }
+
+    #form-with-button {
+        align-items: center
+    }
+}
+
+@media (max-width: 700px) {
+
+    #contact-headline {
+        padding-left: 20px;
+    }
+
+    .contact {
+        padding-right: 70px;
+    }
+
+    #form-and-description {
+        padding-left: 70px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    #contact-headline {
+        padding-left: 5px;
+    }
+
+    #contact-decliner {
+        width: 20px;
+    }
+
+    .contact {
+        padding-right: 25px;
+    }
+
+    #form-and-description {
+        padding-left: 25px;
+    }
 }

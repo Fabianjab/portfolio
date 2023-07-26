@@ -11,8 +11,31 @@
 
 .menu-sections {
     margin-right: 29px;
+    font-size: 23px;
+    cursor: pointer;
+
+    &:hover {
+        color: #70E61C;
+    }
 }
 
 #fabian-logo {
     height: 35px;
+}
+
+@media (max-width: 900px) {
+    #burger-menu {
+        display: block !important;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .header {
+        display: flex;
+        padding-left: 50px;
+        padding-right: 50px;
+
+    }
 }

@@ -1,9 +1,7 @@
 .my-skills-container {
-    background-color: rgb(27, 37, 57);
     padding-left: 120px;
-    padding-right: 120px;
     display: flex;
-    padding-top: 250px;
+    padding-bottom: 180px;
 }
 
 .programm-list {
@@ -19,32 +17,45 @@
     padding-right: 170px;
     padding-bottom: 100px;
     z-index: 2;
+
+    @keyframes jump {
+
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-15px);
+        }
+    }
+
+    &:hover {
+        animation: jump 0.3s;
+    }
 }
 
 .my-skills-section {
     display: flex;
     flex-direction: column;
     width: 34%;
-    align-items: center;
-
 }
 
 #purple-decliner {
-    position: absolute;
-    right: 0;
     width: 58px;
     height: 4px;
     background-color: #9747FF;
-
+    margin-left: 49px;
 }
 
 #my-skills-text {
     text-align: right;
     padding-bottom: 50px;
+    margin-right: 120px;
 }
 
 #button-my-skills {
-    width: auto;
+    width: 200px;
 }
 
 #my-skills-shadow {
@@ -52,4 +63,54 @@
     left: 0;
     z-index: 1;
     top: 1950px
+}
+
+#my-skills-with-decliner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#my-skills-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 900px) {
+
+    .my-skills-container {
+        flex-direction: column-reverse;
+        padding-left: 50px;
+        padding-right: 50px;
+        align-items: center;
+    }
+
+    #button-my-skills {
+        display: none;
+    }
+
+    #mobile-button-my-skills {
+        display: flex !important;
+        width: 185px;
+    }
+
+    .programm-list {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .my-skills-section {
+        width: 100%;
+        align-items: flex-end;
+    }
+
+    #underline-my-skills {
+        text-align: right;
+    }
+
+    .icons-skills {
+        padding-right: 38px;
+        padding-left: 38px;
+    }
 }

@@ -9,7 +9,7 @@ body {
     max-width: 100%;
     margin: 0;
     color: white;
-    background-color: rgb(27, 37, 57);
+    background-color: #141d2f;
 }
 
 button {
@@ -113,10 +113,47 @@ input {
     background-color: #9747ff00;
     color: white;
     margin-bottom: 35px;
-    border: solid 2px #9747FF ;
+    border: solid 2px #9747FF;
     border-radius: 10px;
+    text-indent: 20px;
+
+
+    &:hover {
+        border: solid 2px #70E61C;
+
+    }
 }
 
 input::placeholder {
     color: white;
 }
+
+.icon {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    padding-right: 40px;
+
+    &:hover {
+        transform: scale(1.33);
+    }
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+// Responsive Settings
+@media (max-width: 900px) {
+
+    h2 {
+        font-size: 45px;
+    }
+
+    input {
+        max-width: 100%;
+    }
+
+}
+

@@ -33,11 +33,13 @@
 .laptop-projects-left {
     width: 620px;
     height: 339px;
+    z-index: 2;
 }
 
 .laptop-projects-right {
     width: 620px;
     height: 339px;
+    z-index: 2;
 }
 
 .laptop-section-left {
@@ -53,6 +55,7 @@
 
 .buttons-section-projects {
     margin-top: 20px;
+    z-index: 5;
 }
 
 #purple-background-projects {
@@ -88,6 +91,7 @@
         align-items: center;
         text-align: center;
     }
+
 }
 
 @media (max-width: 750px) {
@@ -160,4 +164,18 @@
 
     }
 
+}
+
+@media (max-width: 500px) {
+
+    #purple-background-projects {
+        left: 195px;
+        top: 4194px;
+        height: 429px;
+    }
+
+    #green-background-projects {
+        top: 6168px;
+        height: 657px;
+    }
 }

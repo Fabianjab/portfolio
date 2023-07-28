@@ -214,7 +214,7 @@
     }
 
     #picture-fabian {
-        width: 640px;
+        width: 100%;
         padding-right: 0px;
     }
 
@@ -249,8 +249,13 @@
 }
 
 @media (max-width: 700px) {
-    #presentation-container {
-        margin-top: 0px;
+    
+    #margin-top {
+        top: 350px;
+    }
+
+    #background-layer-top {
+        top: 350px;
     }
 }
 
@@ -262,25 +267,27 @@
     }
 
     #picture-fabian {
-        width: 340px;
+        width: 100%;
         padding-right: 0px;
 
     }
 
     #iam-presentation {
-        font-size: 19px;
+        font-size: 20px;
     }
 
     #name-presentation {
         font-size: 24px;
+        margin-bottom: 0px;
     }
 
     #designation-presentation {
-        font-size: 20px;
+        font-size: 19px;
+        margin-bottom: -3px;
     }
 
     #background-layer-top {
-        top: 200px;
+        top: 320px;
     }
 
     #presentation-container {
@@ -289,9 +296,23 @@
     }
 }
 
+
+@media (max-width: 450px) {
+    .presentation-container {
+        margin-top: 0px;
+    }
+
+    #background-layer-top {
+        top: 258px;
+    }
+    #infos-short {
+        margin-bottom: 0px;
+    }
+}
+
 @media (max-width: 350px) {
     #background-layer-top {
-        top: 250px;
+        top: 200px;
     }
 
     #background-decliner {
@@ -300,5 +321,10 @@
 
     #infos-short {
         margin-left: 80px;
+        margin-bottom: 20px;
+    }
+
+    .icon {
+        padding-right: 20px;
     }
 }

@@ -92,11 +92,11 @@
     #mobile-button-my-skills {
         display: flex !important;
         width: 185px;
-        margin-right: 50px;
+        margin-right: 25px;
+        z-index: 2;
     }
 
     .programm-list {
-        width: 100%;
         justify-content: center;
         padding-right: 25px;
     }
@@ -144,5 +144,20 @@
 
     #my-skills-text {
         margin-right: 25px;
+    }
+}
+
+@media (max-width: 550px) {
+    .icons-skills {
+        padding-right: 11px;
+        padding-left: 11px;
+    }
+}
+
+
+@media (max-width: 380px) {
+    .icons-skills {
+        width: 56px;
+        padding-bottom: 50px;
     }
 }

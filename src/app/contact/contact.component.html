@@ -15,16 +15,20 @@
             </div>
         </div>
         <div id="form-with-button">
-            <form id="contact-form">
-                <input type="text" placeholder="Your name">
-                <input type="email" placeholder="Your email">
-                <textarea id="growable-input" placeholder="Your message"></textarea>
-            </form>
-            <button id="button-form" type="submit">Send message!</button>
+            <form (ngSubmit)="onSubmit()" action="/form.php" method="post" id="contact-form">
+                <input id="name" type="text" name="name" placeholder="Your name" required (input)="validateName($event)">
+                <span id="name-error" class="error-message">{{ nameError }}</span>
+                <input id="email" type="email" name="email" placeholder="Your email address" required (input)="validateEmail($event)">
+                <span id="email-error" class="error-message">{{ emailError }}</span>
+                <textarea id="growable-input" name="growable-input" placeholder="Your message" required (input)="validateMessage($event)"></textarea>
+                <span id="message-error" class="error-message">{{ messageError }}</span>
+                <button id="button-form" value="Nachricht senden" type="submit">Send message!</button>
+              </form>
+              
         </div>
     </div>
     <div id="position-arrow">
-        <a href=".header">
+        <a href="#header">
             <img id="arrow-top" src="/assets/img/arrow-top.svg" alt="arrow-top">
         </a>
     </div>

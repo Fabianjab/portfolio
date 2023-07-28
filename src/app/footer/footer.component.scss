@@ -27,6 +27,14 @@
     line-height: 28px;
 }
 
+#impressum {
+
+    &:hover {
+        text-decoration: underline #1CDAE6;
+        text-underline-offset: 8px;
+    }
+}
+
 @media (max-width: 900px) {
     #responsive-impressum {
         display: flex !important;
@@ -45,6 +53,7 @@
         padding-bottom: 60px;
         padding-top: 60px;
     }
+
     #logo-impressum {
         margin-bottom: 30px;
     }
@@ -52,6 +61,7 @@
     #copyright {
         margin-bottom: 30px;
     }
+
     .icon {
         padding-left: 20px;
         padding-right: 20px;

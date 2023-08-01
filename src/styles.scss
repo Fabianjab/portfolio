@@ -1,15 +1,20 @@
 @font-face {
-    font-family: 'Poppins', sans-serif;
-    src: url(/assets/fonts/Poppins-Regular.ttf);
+    font-family: 'Poppins';
+    src: url('assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
+
+
 
 body {
     font-family: 'Poppins', sans-serif;
-    height: 100vh;
     max-width: 100%;
     margin: 0;
     color: white;
     background-color: #141d2f;
+    scroll-behavior: smooth;
+
 }
 
 button {
@@ -158,4 +163,3 @@ a {
     }
 
 }
-

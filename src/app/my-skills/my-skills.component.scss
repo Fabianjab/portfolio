@@ -11,6 +11,11 @@
 
 }
 
+
+#underline-my-skills {
+    font-size: 80px;
+}
+
 .icons-skills {
     width: 88px;
     height: 100px;
@@ -108,6 +113,7 @@
 
     #underline-my-skills {
         text-align: right;
+        font-size: 80px;
     }
 
     .icons-skills {
@@ -124,6 +130,10 @@
 @media (max-width: 1400px) {
     .my-skills-section {
         width: 600px;
+    }
+
+    #underline-my-skills {
+        font-size: 80px;
     }
 
 }
@@ -159,5 +169,11 @@
     .icons-skills {
         width: 56px;
         padding-bottom: 50px;
+    }
+}
+
+@media (max-width: 1515px) {
+    #underline-my-skills {
+        font-size: 90px;
     }
 }

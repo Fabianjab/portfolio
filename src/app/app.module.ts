@@ -11,6 +11,9 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ImpressumComponent } from './impressum/impressum.component';
+
 
 @NgModule({
   declarations: [
@@ -22,10 +25,13 @@ import { ProjectsComponent } from './projects/projects.component';
     PortfolioComponent,
     ContactComponent,
     FooterComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    ImpressumComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule
   ],
   providers: [],

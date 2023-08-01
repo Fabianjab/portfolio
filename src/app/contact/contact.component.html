@@ -14,15 +14,27 @@
                     Need a Frontend developer? Contact me!</span>
             </div>
         </div>
-        <div id="form-with-button">
-            <form (ngSubmit)="onSubmit()" action="/form.php" method="post" id="contact-form">
+        <!-- <div id="form-with-button">
+            <form (ngSubmit)="onSubmit()" action="https://fabian-jablonka.com/fabian-jablonka.com/send_mail.php" method="post" id="contact-form">
                 <input id="name" type="text" name="name" placeholder="Your name" required (input)="validateName($event)">
                 <span id="name-error" class="error-message">{{ nameError }}</span>
                 <input id="email" type="email" name="email" placeholder="Your email address" required (input)="validateEmail($event)">
                 <span id="email-error" class="error-message">{{ emailError }}</span>
-                <textarea id="growable-input" name="growable-input" placeholder="Your message" required (input)="validateMessage($event)"></textarea>
+                <textarea id="growable-input" name="message" placeholder="Your message" required (input)="validateMessage($event)"></textarea>
                 <span id="message-error" class="error-message">{{ messageError }}</span>
                 <button id="button-form" value="Nachricht senden" type="submit">Send message!</button>
+              </form>
+              
+        </div> -->
+        <div id="form-with-button">
+            <form (submit)="sendMail()" #myForm id="contact-form">
+                <input id="name" type="text" name="name" placeholder="Your name" required (input)="validateName($event)">
+                <span #nameField id="name-error" class="error-message">{{ nameError }}</span>
+                <input id="email" type="email" name="email" placeholder="Your email address" required (input)="validateEmail($event)">
+                <span #emailField id="email-error" class="error-message">{{ emailError }}</span>
+                <textarea id="growable-input" name="message" placeholder="Your message" required (input)="validateMessage($event)"></textarea>
+                <span #messageField id="message-error" class="error-message">{{ messageError }}</span>
+                <button #sendButton id="button-form" value="Nachricht senden" type="submit">Send message!</button>
               </form>
               
         </div>

@@ -30,7 +30,7 @@
     transform: rotate(270deg);
     font-size: 64px;
     font-weight: 400;
-    margin-top: 5px;
+    margin-top: 54px;
 }
 
 .order-presentation {
@@ -45,7 +45,7 @@
 }
 
 #designation-presentation {
-    font-size: 59px;
+    font-size: 57px;
     font-weight: 400;
     color: #9747FF;
     margin-top: -5px;
@@ -152,15 +152,17 @@
     }
 
     #designation-presentation {
-        font-size: 43px;
+        font-size: 35px;
     }
 
     #name-presentation {
-        font-size: 53px;
+        font-size: 45px;
+        margin-bottom: -9px;
     }
 
     #iam-presentation {
-        font-size: 45px;
+        font-size: 35px;
+        margin-top: 34px;
     }
 }
 
@@ -219,15 +221,18 @@
     }
 
     #iam-presentation {
-        font-size: 32px;
+        font-size: 46px;
+        margin-top: 43px;
+
     }
 
     #name-presentation {
-        font-size: 43px;
+        font-size: 58px;
+        margin-top: 41px;
     }
 
     #designation-presentation {
-        font-size: 35px;
+        font-size: 45px;
     }
 
     #scroll-down {
@@ -249,13 +254,43 @@
 }
 
 @media (max-width: 700px) {
-    
+
     #margin-top {
         top: 350px;
     }
 
     #background-layer-top {
         top: 350px;
+    }
+
+    #iam-presentation {
+        font-size: 40px;
+        margin-top: 40px;
+    }
+
+    #name-presentation {
+        font-size: 50px;
+    }
+
+    #designation-presentation {
+        font-size: 39px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    #iam-presentation {
+        font-size: 33px;
+        margin-top: 41px;
+    }
+
+    #name-presentation {
+        font-size: 44px;
+    }
+
+    #designation-presentation {
+        font-size: 34px;
     }
 }
 
@@ -273,26 +308,28 @@
     }
 
     #iam-presentation {
-        font-size: 20px;
+        font-size: 26px;
+        margin-top: 42px;
     }
 
     #name-presentation {
-        font-size: 24px;
+        font-size: 28px;
         margin-bottom: 0px;
     }
 
     #designation-presentation {
-        font-size: 19px;
+        font-size: 22px;
         margin-bottom: -3px;
+        margin-top: -1px;
     }
 
     #background-layer-top {
-        top: 320px;
+        top: 310px;
     }
 
     #presentation-container {
-        margin-top: 30px;
         margin-bottom: 50px;
+        margin-top: 0;
     }
 }
 
@@ -303,16 +340,32 @@
     }
 
     #background-layer-top {
-        top: 258px;
+        top: 240px;
     }
+
     #infos-short {
         margin-bottom: 0px;
     }
 }
 
+@media (max-width: 420px) {
+    #background-layer-top {
+        top: 280px;
+    }
+}
+
+
+@media (max-width: 390px) {
+    #background-layer-top {
+        top: 245px;
+    }
+}
+
+
+
 @media (max-width: 350px) {
     #background-layer-top {
-        top: 200px;
+        top: 210px;
     }
 
     #background-decliner {
@@ -327,4 +380,28 @@
     .icon {
         padding-right: 20px;
     }
+
+    #iam-presentation {
+        font-size: 22px;
+        margin-top: 42px;
+    }
+
+    #name-presentation {
+        font-size: 23px;
+        margin-bottom: 0px;
+    }
+
+    #designation-presentation {
+        font-size: 18px;
+        margin-bottom: -3px;
+        margin-top: -1px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    #background-layer-top {
+        top: 185px;
+    }
+
 }

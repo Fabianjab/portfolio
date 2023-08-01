@@ -1,15 +1,60 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
-export class ContactComponent {
+export class ContactComponent implements AfterViewInit {
   nameError: string = '';
   emailError: string = '';
   messageError: string = '';
 
+
+  @ViewChild('myForm') myForm: ElementRef | undefined;
+  @ViewChild('nameField') nameField: ElementRef | undefined;
+  @ViewChild('emailField') emailField: ElementRef | undefined;
+  @ViewChild('messageField') messageField: ElementRef | undefined;
+  @ViewChild('sendButton') sendButton: ElementRef | undefined;
+
+  ngAfterViewInit() {
+    console.log('nameField:', this.nameField);
+    console.log('messageField:', this.messageField);
+    console.log('emailField:', this.emailField);
+    console.log('sendButton:', this.sendButton);
+  }
+
+  async sendMail() {
+    if (this.nameField && this.messageField && this.emailField && this.sendButton) {
+      let nameField = this.nameField.nativeElement;
+      let messageField = this.messageField.nativeElement;
+      let emailField = this.emailField.nativeElement;
+      let sendButton = this.sendButton.nativeElement;
+      nameField.disabled = true;
+      messageField.disabled = true;
+      emailField.disabled = true;
+      sendButton.disabled = true;
+
+      let fd = new FormData();
+      fd.append('name', nameField.value);
+      fd.append('email', emailField.value);
+      fd.append('message', messageField.value);
+
+
+      await fetch('https://fabian-jablonka.com/send_mail.php',
+        {
+          method: 'POST',
+          body: fd
+        })
+
+
+      nameField.disabled = false;
+      messageField.disabled = false;
+      emailField.disabled = false;
+      sendButton.disabled = false;
+
+    }
+  }
   validateName(event: Event): void {
     const nameInput = (event.target as HTMLInputElement).value.trim();
 
@@ -96,7 +141,7 @@ export class ContactComponent {
     const element = document.getElementById(id);
     if (element) {
       element.style.backgroundImage = "url(./assets/img/check-form.svg)";
-      element.style.backgroundPositionX = "right";
+      element.style.backgroundPositionX = "96%";
       element.style.backgroundPositionY = "center";
       element.style.backgroundRepeat = "no-repeat";
     }

@@ -22,7 +22,6 @@
 #contact-section {
     z-index: 2;
     width: 50%;
-
 }
 
 #purple-background-contact {
@@ -35,7 +34,6 @@
     display: flex;
     justify-content: space-between;
     padding-left: 120px;
-
 }
 
 
@@ -79,7 +77,6 @@
     &:hover {
         border: solid 2px #1CDAE6;
     }
-
 }
 
 #growable-input::placeholder {
@@ -143,7 +140,6 @@
 }
 
 @media (max-width: 900px) {
-
     #growable-input {
         width: 100%;
     }
@@ -202,5 +198,4 @@
     #form-and-description {
         padding-left: 25px;
     }
-
 }

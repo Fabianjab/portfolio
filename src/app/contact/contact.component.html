@@ -6,41 +6,29 @@
     <div id="form-and-description">
         <div id="contact-section">
             <div id="contact-description">
-                <span id="small-headline-contact">Got a problem to solve?</span> <br><br>
+                <span id="small-headline-contact">Need a Frontend developer? Contact me!
+                </span> <br><br>
                 <span>Contact me through this form, I am interested in hearing you, knowing your ideas and contributing
                     to
                     your
                     projects with my work. <br> <br>
-                    Need a Frontend developer? Contact me!</span>
+                    <b>Contact me!</b></span>
             </div>
-        </div>
-        <!-- <div id="form-with-button">
-            <form (ngSubmit)="onSubmit()" action="https://fabian-jablonka.com/fabian-jablonka.com/send_mail.php" method="post" id="contact-form">
-                <input id="name" type="text" name="name" placeholder="Your name" required (input)="validateName($event)">
-                <span id="name-error" class="error-message">{{ nameError }}</span>
-                <input id="email" type="email" name="email" placeholder="Your email address" required (input)="validateEmail($event)">
-                <span id="email-error" class="error-message">{{ emailError }}</span>
-                <textarea id="growable-input" name="message" placeholder="Your message" required (input)="validateMessage($event)"></textarea>
-                <span id="message-error" class="error-message">{{ messageError }}</span>
-                <button id="button-form" value="Nachricht senden" type="submit">Send message!</button>
-              </form>
-              
-        </div> -->
+        </div>   
         <div id="form-with-button">
             <form (submit)="sendMail()" #myForm id="contact-form">
-                <input id="name" type="text" name="name" placeholder="Your name" required (input)="validateName($event)">
-                <span #nameField id="name-error" class="error-message">{{ nameError }}</span>
-                <input id="email" type="email" name="email" placeholder="Your email address" required (input)="validateEmail($event)">
-                <span #emailField id="email-error" class="error-message">{{ emailError }}</span>
-                <textarea id="growable-input" name="message" placeholder="Your message" required (input)="validateMessage($event)"></textarea>
-                <span #messageField id="message-error" class="error-message">{{ messageError }}</span>
+                <input #nameField id="name" type="text" name="name" placeholder="Your name" required (input)="validateName($event)">
+                <span id="name-error" class="error-message">{{ nameError }}</span>
+                <input #emailField  id="email" type="email" name="email" placeholder="Your email address" required (input)="validateEmail($event)">
+                <span id="email-error" class="error-message">{{ emailError }}</span>
+                <textarea #messageField id="growable-input" name="message" placeholder="Your message" required (input)="validateMessage($event)"></textarea>
+                <span id="message-error" class="error-message">{{ messageError }}</span>
                 <button #sendButton id="button-form" value="Nachricht senden" type="submit">Send message!</button>
-              </form>
-              
+              </form>             
         </div>
     </div>
     <div id="position-arrow">
-        <a href="#header">
+        <a href="#top">
             <img id="arrow-top" src="/assets/img/arrow-top.svg" alt="arrow-top">
         </a>
     </div>

@@ -47,7 +47,6 @@ export class ContactComponent implements AfterViewInit {
           body: fd
         })
 
-
       nameField.disabled = false;
       messageField.disabled = false;
       emailField.disabled = false;
@@ -117,7 +116,6 @@ export class ContactComponent implements AfterViewInit {
 
     if (!this.nameError && !this.emailError && !this.messageError) {
       console.log('Formular kann gesendet werden.');
-      // Weitere Logik zum Absenden des Formulars hier...
     }
   }
 

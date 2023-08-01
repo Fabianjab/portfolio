@@ -28,7 +28,6 @@
 }
 
 #impressum {
-
     &:hover {
         text-decoration: underline #1CDAE6;
         text-underline-offset: 8px;
@@ -66,4 +65,9 @@
         padding-left: 20px;
         padding-right: 20px;
     }
+
+    #imprint-link-button {
+        display: none;
+    }
+
 }

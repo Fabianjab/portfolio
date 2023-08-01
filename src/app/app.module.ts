@@ -13,6 +13,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ImpressumComponent } from './impressum/impressum.component';
+import { ContentComponent } from './content/content.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { ImpressumComponent } from './impressum/impressum.component';
     ContactComponent,
     FooterComponent,
     ProjectsComponent,
-    ImpressumComponent
+    ImpressumComponent,
+    ContentComponent
   ],
   imports: [
     BrowserModule,

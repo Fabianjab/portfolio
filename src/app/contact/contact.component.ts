@@ -117,9 +117,8 @@ export class ContactComponent implements AfterViewInit {
     this.validateMessage({ target: messageInput } as unknown as Event);
 
     if (!this.nameError && !this.emailError && !this.messageError) {
-      console.log('Formular kann gesendet werden.');
       this.isMessageSent = true;
-
+      this.sendMail();
     }
   }
 

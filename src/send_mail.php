@@ -16,6 +16,7 @@ $redirect = 'success.html';
 #  1) Upload this file to your FTP Server
 #  2) Send a POST request to this file, including
 #     [name] The name of the sender (Absender)
+#     [email] The email address of the sender
 #     [message] Message that should be send to you
 #
 ##################################
@@ -43,9 +44,15 @@ switch ($_SERVER['REQUEST_METHOD']) {
         $subject = "Contact From " . $_POST['name'];
         $headers = "From:  noreply@developerakademie.com";
 
-        
+        // Get the email address from the form
+        $sender_email = $_POST['email'];
 
-        mail($recipient, $subject, $_POST['message'], $headers);
+        // Combine the sender's name and email in the message body
+        $message = "Name: " . $_POST['name'] . "\n";
+        $message .= "Email: " . $sender_email . "\n";
+        $message .= "Message: " . $_POST['message'];
+
+        mail($recipient, $subject, $message, $headers);
         header("Location: " . $redirect); 
 
         break;
@@ -53,3 +60,4 @@ switch ($_SERVER['REQUEST_METHOD']) {
         header("Allow: POST", true, 405);
         exit;
 }
+?>

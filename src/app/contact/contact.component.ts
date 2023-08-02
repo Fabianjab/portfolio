@@ -107,15 +107,17 @@ export class ContactComponent implements AfterViewInit {
     }
   }
 
-  onSubmit(): void {
+  submitForm(event: Event): void {
+    event.preventDefault();
+  
     const nameInput = document.getElementById('name') as HTMLInputElement;
     const emailInput = document.getElementById('email') as HTMLInputElement;
     const messageInput = document.getElementById('growable-input') as HTMLTextAreaElement;
-
+  
     this.validateName({ target: nameInput } as unknown as Event);
     this.validateEmail({ target: emailInput } as unknown as Event);
     this.validateMessage({ target: messageInput } as unknown as Event);
-
+  
     if (!this.nameError && !this.emailError && !this.messageError) {
       this.isMessageSent = true;
       this.sendMail();

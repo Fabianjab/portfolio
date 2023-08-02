@@ -9,6 +9,8 @@ export class ContactComponent implements AfterViewInit {
   nameError: string = '';
   emailError: string = '';
   messageError: string = '';
+  isMessageSent: boolean = false;
+
 
 
   @ViewChild('myForm') myForm: ElementRef | undefined;
@@ -116,6 +118,8 @@ export class ContactComponent implements AfterViewInit {
 
     if (!this.nameError && !this.emailError && !this.messageError) {
       console.log('Formular kann gesendet werden.');
+      this.isMessageSent = true;
+
     }
   }
 

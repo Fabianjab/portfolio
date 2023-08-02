@@ -24,7 +24,8 @@
                 <textarea #messageField id="growable-input" name="message" placeholder="Your message" required (input)="validateMessage($event)"></textarea>
                 <span id="message-error" class="error-message">{{ messageError }}</span>
                 <button #sendButton id="button-form" value="Nachricht senden" type="submit">Send message!</button>
-              </form>             
+                <span id="message-sent" *ngIf="isMessageSent">Message successfully sent</span>
+            </form>             
         </div>
     </div>
     <div id="position-arrow">

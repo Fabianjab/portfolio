@@ -28,6 +28,12 @@
     justify-content: space-between;
 }
 
+#hidden-container-portfolio {
+    position: relative;
+    left: 0;
+    top: -60px;
+}
+
 @media (max-width: 1600px) {
 
     #right-decliner-portfolio {

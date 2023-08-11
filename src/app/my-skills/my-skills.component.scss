@@ -16,6 +16,12 @@
     font-size: 80px;
 }
 
+#hidden-container-skills {
+    position: relative;
+    left: 0;
+    top: -150px;
+}
+
 .icons-skills {
     width: 88px;
     height: 100px;
@@ -82,10 +88,17 @@
     align-items: center;
 }
 
+@media (min-width: 1665px) {
+    #hidden-container-skills {
+        top: -200px;
+    }
+}
+
 @media (max-width: 1515px) {
     #underline-my-skills {
         font-size: 90px;
     }
+
 }
 
 @media (max-width: 1400px) {
@@ -140,6 +153,16 @@
     #my-skills-shadow {
         top: 2630px;
         height: 680px;
+    }
+
+    #hidden-container-skills {
+        top: -1100px;
+    }
+}
+
+@media (max-width: 1065px) {
+    #hidden-container-skills {
+        top: -1280px;
     }
 }
 

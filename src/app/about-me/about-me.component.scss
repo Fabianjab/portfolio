@@ -64,6 +64,12 @@
     height: 500px;
 }
 
+#hidden-container-about-me {
+    position: relative;
+    left: 0;
+    top: -100px;
+}
+
 @media (max-width: 350px) {
     #avatar {
         display: none;

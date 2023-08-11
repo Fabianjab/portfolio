@@ -154,7 +154,7 @@ export class ContactComponent implements AfterViewInit {
     const element = document.getElementById(id);
     if (element) {
       element.style.backgroundImage = "url(./assets/img/attention-form.svg)";
-      element.style.backgroundPositionX = "right";
+      element.style.backgroundPositionX = "96%";
       element.style.backgroundPositionY = "center";
       element.style.backgroundRepeat = "no-repeat";
     }

@@ -135,6 +135,12 @@
     align-items: center;
 }
 
+#hidden-container-contact {
+    position: relative;
+    top: -50px;    
+    left: 0;
+}
+
 @media (max-width: 1400px) {
     #form-and-description {
         flex-direction: column;
